@@ -7,4 +7,4 @@ require 'import_export'
 
 input_file = ARGV[0]
 
-ImportExport::Runner.new(input_file)
+ImportExport::Runner.run input_file

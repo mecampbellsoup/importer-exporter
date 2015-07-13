@@ -4,3 +4,5 @@
 * Expect to have other models and formats very soon, and so it needs to be easy to extend
 
 `import_export.rb input.csv > output.json`
+
+## Notes
