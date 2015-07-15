@@ -1,12 +1,9 @@
 module ImportExport
   class CSVParser
-    attr_reader :csv_file, :data, :headers, :rows
+    attr_reader :data
 
     def initialize(csv_file)
-      @csv_file = csv_file
-      @data     = CSV.read(csv_file)
-      @headers  = data[0]
-      @rows     = data[1 .. -1]
+      @data = CSV.read(csv_file, headers: true)
     end
   end
 end

@@ -3,7 +3,7 @@ module ImportExport
     def self.run(input_file)
       data = Importer.new(input_file).data
 
-      Exporter.new(data).to_json
+      $stdout.write Exporter.new(data).to_json
     end
   end
 end
